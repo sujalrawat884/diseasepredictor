@@ -1,5 +1,4 @@
 import streamlit as st 
-from streamlit_navigation_bar import st_navbar
 st.markdown("""
 <style>
 [data-testid="stAppViewContainer"] {
@@ -24,24 +23,16 @@ right: 2rem;
 .st-emotion-cache-fm8pe0.e1nzilvr4{
     color : black;
 }
+*{
+    color : white;
+}
 </style>            
 """, unsafe_allow_html=True)
 
-
-
-page=st_navbar(["Home","Diabetic Predictor","Heart Attack Predictor","Liver Predictor","Migrane Predictor"])
-
-
-if page == "Home":
-    st.markdown("<h1 style='text-align: center; color: black;'>Welcome To The Homepage</h1>",unsafe_allow_html=True)
-if page == "Diabetic Predictor":
-    st.page_link("pages\DiabeticPredictor.py")
-if page == "Heart Attack Predictor":
-    st.page_link("pages\HeartattackPredictor.py")
-if page == "Liver Predictor":
-    st.page_link("pages\LiverPredictor.py")
-if page == "Migrane Predictor":
-    st.page_link("pages\MigranePredictor.py")       
-     
-    
+st.markdown("<h1 style='text-align: center; color: black;'>Welcome To The Homepage</h1>",unsafe_allow_html=True)
+st.markdown("---")
+st.link_button("Diabetic Predictor", "https://diabeticpredictor.streamlit.app/")
+st.link_button("Heart Attack Predictior", "https://heartattackpredictor.streamlit.app/")
+st.link_button("Liver Predictior", "https://liverpredictor.streamlit.app/")
+st.link_button("Migrane Predictor", "https://migranepredictor.streamlit.app/")
     
