@@ -1,6 +1,5 @@
-import streamlit as st
-
-
+import streamlit as st 
+from streamlit_option_menu import option_menu
 st.markdown("""
 <style>
 [data-testid="stAppViewContainer"] {
@@ -22,11 +21,29 @@ right: 2rem;
 .st-emotion-cache-15ecox0.ezrtsby0{
     visibility: hidden;
 }
+.st-emotion-cache-fm8pe0.e1nzilvr4{
+    color : black;
+}
 </style>            
 """, unsafe_allow_html=True)
 
 
 st.markdown("<h1 style='text-align: center; color: black;'>Welcome To The Homepage</h1>",unsafe_allow_html=True)
 
+selected=option_menu(
+    menu_title=None,
+    options=["Home","Diabetic Predictor","Heart Attack Predictor","Liver Predictor","Migrane Predictor"],
+    orientation="horizontal"
+    )
+
+if selected == "Diabetic Predictor":
+    st.page_link("Pages\DiabeticPredictor.py")
+if selected == "Heart Attack Predictor":
+    st.page_link("Pages\HeartattackPredictor.py")
+if selected == "Liver Predictor":
+    st.page_link("Pages\LiverPredictor.py")
+if selected == "Migrane Predictor":
+    st.page_link("Pages\MigranePredictor.py")       
+     
     
     
