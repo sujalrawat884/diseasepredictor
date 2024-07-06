@@ -43,6 +43,7 @@ st.markdown("""
 
 </style>            
 """, unsafe_allow_html=True)
+st.link_button("HomePage", "https://techtitans.streamlit.app/")
 
 st.markdown("<h1 style='text-align: center;'>Migrane Predictor</h1>",unsafe_allow_html=True)
 with st.form("Form 1"):
