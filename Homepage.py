@@ -29,7 +29,8 @@ right: 2rem;
 </style>            
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 style='text-align: center; color: black;'>Welcome To The Homepage</h1>",unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>Welcome To The VitalBot</h1>",unsafe_allow_html=True)
+
 st.markdown("---")
 st.link_button("Diabetic Predictor", "https://diabeticpredictor.streamlit.app/")
 st.link_button("Heart Attack Predictior", "https://heartattackpredictor1.streamlit.app/")
