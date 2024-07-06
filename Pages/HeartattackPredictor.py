@@ -65,9 +65,10 @@ st.markdown("""
 .st-emotion-cache-15ecox0.ezrtsby0{
     visibility: hidden;
 }
-
 </style>            
 """, unsafe_allow_html=True)
+st.link_button("HomePage", "https://techtitans.streamlit.app/")
+
 
 st.markdown("<h1 style='text-align: center;'>Heart Attack Predictor</h1>",unsafe_allow_html=True)
 with st.form("Form 1"):
