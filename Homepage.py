@@ -1,5 +1,5 @@
 import streamlit as st 
-from streamlit_option_menu import option_menu
+from streamlit_navigation_bar import st_navbar
 st.markdown("""
 <style>
 [data-testid="stAppViewContainer"] {
@@ -28,22 +28,20 @@ right: 2rem;
 """, unsafe_allow_html=True)
 
 
-st.markdown("<h1 style='text-align: center; color: black;'>Welcome To The Homepage</h1>",unsafe_allow_html=True)
 
-selected=option_menu(
-    menu_title=None,
-    options=["Home","Diabetic Predictor","Heart Attack Predictor","Liver Predictor","Migrane Predictor"],
-    orientation="horizontal"
-    )
+page=st_navbar(["Home","Diabetic Predictor","Heart Attack Predictor","Liver Predictor","Migrane Predictor"])
 
-if selected == "Diabetic Predictor":
-    st.page_link("Pages\DiabeticPredictor.py")
-if selected == "Heart Attack Predictor":
-    st.page_link("Pages\HeartattackPredictor.py")
-if selected == "Liver Predictor":
-    st.page_link("Pages\LiverPredictor.py")
-if selected == "Migrane Predictor":
-    st.page_link("Pages\MigranePredictor.py")       
+
+if page == "Home":
+    st.markdown("<h1 style='text-align: center; color: black;'>Welcome To The Homepage</h1>",unsafe_allow_html=True)
+if page == "Diabetic Predictor":
+    st.page_link("pages\DiabeticPredictor.py")
+if page == "Heart Attack Predictor":
+    st.page_link("pages\HeartattackPredictor.py")
+if page == "Liver Predictor":
+    st.page_link("pages\LiverPredictor.py")
+if page == "Migrane Predictor":
+    st.page_link("pages\MigranePredictor.py")       
      
     
     
