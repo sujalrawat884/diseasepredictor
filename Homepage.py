@@ -55,7 +55,7 @@ def main():
     st.markdown("<h1 style='text-align: center; color: black;'>Welcome To The VitalBot</h1>", unsafe_allow_html=True)
     st.markdown("---")
     st.link_button("Diabetic Predictor", "https://diabeticpredictor.streamlit.app/")
-    st.link_button("Heart Attack Predictor", "https://heartattackpredictor.streamlit.app/")
+    st.link_button("Heart Attack Predictor", "https://heartattackpredictor1.streamlit.app/")
     st.link_button("Liver Predictor", "https://liverpredictor.streamlit.app/")
     st.link_button("Migrane Predictor", "https://migranepredictor.streamlit.app/")
     # Add a button to toggle chatbot visibility
