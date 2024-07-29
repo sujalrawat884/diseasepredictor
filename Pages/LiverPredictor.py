@@ -44,7 +44,7 @@ st.markdown("""
 st.link_button("HomePage", "https://techtitans.streamlit.app/")
 
 
-st.markdown("<h1 style='text-align: center;'>Liver Predictor</h1>",unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Liver Disease Predictor</h1>",unsafe_allow_html=True)
 with st.form("Form 1"):
     col1,col2,col3,col4=st.columns(4)
     age=col1.number_input("age",format= "%.0f",min_value=4.0,max_value=90.0,)
